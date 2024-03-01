@@ -1,0 +1,63 @@
+.fondo{
+    background-color: #902125;
+    
+}
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/merriweather@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/merriweather@latest/latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+  .fondo-c{
+    background-image: url('/assets/images/prueba1.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    height: 400px; 
+  }
+.fontH{
+    font-family: 'Merriweather';
+    }
+.imgs-home{
+    height: 400px;
+    border-radius: 10px;
+}
+.home-img{
+    font-family: 'Merriweather';
+    color: #D1A76E;
+    display: block; 
+    margin: 0 auto; /* Centra la imagen */
+    max-width: 100%; /* Asegura que la imagen no se desborde en dispositivos pequeños */
+    height: auto; 
+}
+.logoH{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.slogan{
+    font-family: 'Merriweather';
+    text-align: center;
+    color: #D1A76E;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 55px;
+}
+.saber{
+    font-family: 'Merriweather';
+    text-decoration: none;
+    color: #D1A76E;   
+    font-size: 12px;
+    font-style: italic;
+}
+.footer-fondo{
+    background-color: black;
+    padding: 20px 0; 
+    border-radius: 5px;
+}
+.l-footer{
+    font-family: 'Merriweather';
+    text-decoration: none;
+    color: #902125;
+    font-size: 15px;
+}
