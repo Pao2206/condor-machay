@@ -52,6 +52,7 @@
   color: #d1a76e;
   -webkit-text-stroke: 0.5px black;
   font-size: 55px;
+  justify-content: center;
 }
 .saber {
   font-family: "Merriweather";
@@ -137,6 +138,7 @@
 .galeria{
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 .video-container {
     display: flex;
@@ -155,20 +157,67 @@
   display: flex;
   margin: 20px;
   font-family: "Merriweather";
-  background-color: #131516;
-  color: #d1a76e;
+  background-color: white;
+  color: #902125;
   padding: 10px;
   border-radius: 10px;
 }
 .info-contacto {
   font-family: "Merriweather";
-  color: black;
+  color: #902125;
   text-decoration: none;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 .info-contacto a {
   font-family: "Merriweather";
-  color: #d1a76e;
+  color: #902125;
   text-decoration: none;
+}
+.contacto{
+  font-style: italic;
+  color: black;
+}
+.container {
+  text-align: center;
+}
+.carrito {
+  max-width: 800px; 
+  font-family: "Merriweather";
+  margin: 0 auto; 
+}
+.botonCarrito {
+  height: 300px; 
+  width: 100%; 
+  border-radius: 10px; 
+}
+.botonCarrito img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px;
+  position: absolute; 
+}
+.table-c {
+  background-color: #ffffff;
+  font-family: "Merriweather";
+  border-collapse: collapse; 
+  max-width: 100%; 
+  width: 100%; 
+}
+.table-c th {
+  background-color: #f0f0f0; 
+  color: #902125;
+  padding: 10px; 
+  text-align: center;
+  border: 2px solid #ffffff; 
+}
+.table-c td {
+  background-color: #f9f9f9; 
+  padding: 10px; 
+  text-align: center;
+  border: 2px solid #ffffff; 
+}
+.pieTabla {
+  font-weight: bold;
 }

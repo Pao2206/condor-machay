@@ -1,0 +1,22 @@
+{
+  "carrito": [
+    {
+      "id": "1",
+      "producto": "Vino de Arándano",
+      "precio": 15,
+      "cantidad": 2
+    },
+    {
+      "id": "2",
+      "producto": "Vino de Grosella",
+      "precio": 15,
+      "cantidad": 1
+    },
+    {
+      "id": "3",
+      "producto": "Vino de Jamaica",
+      "precio": 10,
+      "cantidad": 1
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/icon-carrito.png" />
+    <title>Carrito</title>
+    <script src="/scripts/script.js"></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fondo">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand fontH"
+            href="/index.html"
+            style="color: #d1a76e; font-weight: bo"
+            >CÓNDOR MACHAY</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fontH">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/pages/index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="/pages/nosotros.html"
+                >Nuestra Historia</a
+              >
+              <a class="nav-link" href="/pages/productos.html"
+                >Productos y Servicios</a
+              >
+              <a class="nav-link" href="/pages/galeria.html">Galería</a>
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              <a class="nav-link" href="/pages/carrito.html">Carrito</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div>
+          <img src="/assets/images/logo2.png" alt="" class="logoH" />
+        </div>
+        <br>
+        <h1 class="titulos">CARRITO</h1>
+        <h2 class="titulos-nos">Descubre el placer en cada sorbo con nuestra exquisita selección de vinos, ¡Una experiencia que no querrás perderte!</h2>
+      </section>
+    </header>
+    
+    <main class="row container carrito">
+      <section class="col-md-7">
+        
+        <div>
+          <button
+            id="arandano"
+            onclick="agregarProducto('1','Vino de Arándano', 15)"
+          >
+            <img
+              src="/assets/images/vinoArandano.jpg"
+              alt=""
+              class="botonCarrito"
+            />
+            <p style="color: #902125;">Vino de Arándano</p>
+          </button>
+          <button
+            id="grosella"
+            onclick="agregarProducto('2','Vino de Grosella', 15)"
+          >
+            <img
+              src="/assets/images/vinoGrosella.jpg"
+              alt=""
+              class="botonCarrito"
+            />
+            <p style="color: #902125;">Vino de Grosella</p>
+          </button>
+          <button
+            id="jamaica"
+            onclick="agregarProducto('3','Vino de Jamaica', 10)"
+          >
+            <img
+              src="/assets/images/vinoJamaica.jpg"
+              alt=""
+              class="botonCarrito"
+            />
+            <p style="color: #902125;">Vino de Jamaica</p>
+          </button>
+        </div>
+        <div>
+        <button
+          id="maracuya"
+          onclick="agregarProducto('4','Vino de Maracuya', 15)"
+        >
+          <img
+            src="/assets/images/vinoMaracuya.jpg"
+            alt=""
+            class="botonCarrito"
+          />
+          <p style="color: #902125;">Vino de Maracuyá</p>
+        </button>
+        <button
+        id="mora"
+        onclick="agregarProducto('5','Vino de Mora', 10)"
+      >
+        <img
+          src="/assets/images/vinoMora.jpg"
+          alt=""
+          class="botonCarrito"
+        />
+        <p style="color: #902125;">Vino de Mora</p>
+      </button>
+        <button
+        id="mortino"
+        onclick="agregarProducto('6','Vino de Mortiño', 10)"
+      >
+        <img
+          src="/assets/images/vinoMortino.jpg"
+          alt=""
+          class="botonCarrito"
+        />
+        <p style="color: #902125;">Vino de Mortiño</p>
+      </button>
+        </div>
+      </section>
+
+      <section class="col-md-5">
+        
+        <table class="table-c">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+
+          <tbody id="tbody"></tbody>
+
+          <tfoot class="pieTabla">
+            <th>TOTAL</th>
+            <th></th>
+            <td id="total">0</td>
+          </tfoot>
+        </table>
+        <br><br>
+        
+        <p style="color: black; text-align: left;">Para confirmar tu compra, puedes hacer el pago con cualquiera de estas formas:</p>
+        <ul style="color: black; text-align: left;">
+          <li>Tarjeta de crédito y débito</li>
+          <li>Transferencia bancaria</li>
+          <li>Efectivo</li>
+          <li>De una!</li>
+          <li>Paypal</li>
+        </ul>
+        <br>
+        <p style="color: black; text-align: left;">Si deseas el servicio de vino personalizado ponte en contacto con nosotros para agendar una cita.</p>
+      </section>
+    </main>
+
+    <section>
+      <h2 class="titulos-nos">Elige el vino que más te guste y te lo llevamos a donde tu quieras</h2>
+    </section>
+
+    <footer class="footer-fondo">
+      <div class="row">
+        <div class="col col-md-3">
+          <h5 class="l-footer">Contenido:</h5>
+          <hr>
+          <a href="/pages/index.html" class="l-footer">Inicio</a><br>
+          <a href="/pages/nosotros.html" class="l-footer">Nuestra Historia</a><br>
+          <a href="/pages/productos.html" class="l-footer">Productos y Servicios</a><br>
+          <a href="/pages/galeria.html"  class="l-footer">Galería</a><br>
+          <a href="/pages/contacto.html"  class="l-footer">Contactos</a><br>
+          <a href="/pages/carrito.html"  class="l-footer">Carrito</a>
+        </div>
+    
+        <div class="col col-md-3">
+          <h5 class="l-footer">Síguenos:</h5>
+          <hr>
+          <a href="https://www.facebook.com/CondorMachayDfs/" target="_blank" rel="noopener noreferrer" class="l-footer">Facebook</a><br>
+            <a href="https://www.instagram.com/condormachay/" target="_blank" rel="noopener noreferrer" class="l-footer">Instagram</a><br>
+            <a href="https://www.tiktok.com/@vinos.condor.machay" target="_blank" rel="noopener noreferrer" class="l-footer">TikTok</a>
+        </div>
+    
+        <div class="col col-md-3">
+            <h5 class="l-footer">Correo:</h5>
+            <hr>
+            <a href="mailto:condormachay1dfs@gmail.com" class="l-footer">condormachay1dfs@gmail.com</a>
+        </div>
+    
+        <div class="col col-md-3">
+          <h5 class="l-footer">Números de contacto:</h5>
+          <hr>
+          <h6 class="l-footer">Ventas al por mayor y menor</h6>
+          <a href="tel:+593969057320" class="l-footer">0969057320</a><br>
+          <a href="tel:+593979312645" class="l-footer">0979312645</a><br>
+        </div>
+    </div>
+    </footer>
+
+  </body>
+</html>
